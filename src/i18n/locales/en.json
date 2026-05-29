@@ -1,0 +1,81 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "gallery": "Gallery",
+    "experience": "Experience",
+    "contact": "Contact",
+    "reserve": "Reserve a Table"
+  },
+  "hero": {
+    "tagline": "Where the city meets the night",
+    "title": "Nouakchott Night",
+    "subtitle": "A grand restaurant for guests and families — fine dining, warm hospitality, and evenings to remember.",
+    "cta": "Book Your Evening",
+    "scroll": "Discover"
+  },
+  "about": {
+    "label": "Our Story",
+    "title": "A destination for every generation",
+    "p1": "Nouakchott Night welcomes travelers, locals, and families under one roof. Our spacious dining rooms, private corners, and lively terrace create the perfect setting for celebrations and quiet dinners alike.",
+    "p2": "From traditional Mauritanian flavors to international cuisine, every plate is prepared with care. Our team treats every guest like family.",
+    "stats": {
+      "seats": "200+ Seats",
+      "families": "Family Friendly",
+      "events": "Private Events"
+    }
+  },
+  "gallery": {
+    "label": "Gallery",
+    "title": "Moments at Nouakchott Night",
+    "subtitle": "Three glimpses into our atmosphere — dining, celebration, and the magic of the night."
+  },
+  "experience": {
+    "label": "The Experience",
+    "title": "Crafted for guests & families",
+    "items": {
+      "dining": {
+        "title": "Fine Dining",
+        "desc": "Seasonal menus, fresh ingredients, and chefs who honor tradition while embracing creativity."
+      },
+      "family": {
+        "title": "Family Spaces",
+        "desc": "Comfortable seating, kids-friendly options, and rooms designed so everyone feels at home."
+      },
+      "events": {
+        "title": "Celebrations",
+        "desc": "Weddings, birthdays, and corporate gatherings — we host your most important nights."
+      },
+      "ambiance": {
+        "title": "Night Ambiance",
+        "desc": "Soft lighting, live music on weekends, and views that capture the spirit of Nouakchott."
+      }
+    }
+  },
+  "contact": {
+    "label": "Visit Us",
+    "title": "Reserve your table",
+    "subtitle": "We look forward to welcoming you and your loved ones.",
+    "phone": "Phone",
+    "hours": "Hours",
+    "hoursValue": "Daily · 12:00 – 00:00",
+    "address": "Nouakchott, Mauritania",
+    "form": {
+      "name": "Your name",
+      "email": "Email",
+      "guests": "Guests",
+      "date": "Preferred date",
+      "message": "Special requests",
+      "submit": "Send Request"
+    }
+  },
+  "media": {
+    "soundOn": "Turn sound on",
+    "soundOff": "Mute",
+    "tapForSound": "Tap to play with sound"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "tagline": "Nouakchott Night — Hospitality under the stars."
+  }
+}
