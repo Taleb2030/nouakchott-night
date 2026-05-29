@@ -1,6 +1,6 @@
 # Experience section — 4 photos (one per highlight)
 
-These photos rotate every **6 seconds** with their title and text:
+These photos slide gently every **10 seconds** with their title and text (tap to pause on phone):
 
 | File | Shows with |
 |------|------------|
