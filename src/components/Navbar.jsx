@@ -74,6 +74,9 @@ export default function Navbar() {
                 {link.label}
               </a>
             ))}
+            <div className="navbar__mobile-lang">
+              <LanguageSwitcher />
+            </div>
             <a href="#contact" className="btn btn--gold" onClick={closeMenu}>
               {t('nav.reserve')}
             </a>
