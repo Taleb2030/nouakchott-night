@@ -34,6 +34,9 @@
   "experience": {
     "label": "L'expérience",
     "title": "Pensé pour les invités et les familles",
+    "paused": "Pause — prenez le temps de lire",
+    "prev": "Précédent",
+    "next": "Suivant",
     "items": {
       "dining": {
         "title": "Gastronomie",

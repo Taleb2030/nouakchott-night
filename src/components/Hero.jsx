@@ -73,14 +73,7 @@ export default function Hero() {
         animate="visible"
       >
         <motion.div className="hero__logo-stage" variants={heroLogo}>
-          <span className="hero__logo-glow" aria-hidden />
-          <span className="hero__logo-ring hero__logo-ring--outer" aria-hidden />
-          <span className="hero__logo-ring hero__logo-ring--inner" aria-hidden />
-          <div className="hero__logo-glass">
-            <Logo className="hero__logo" variant="hero" />
-          </div>
-          <span className="hero__logo-spark hero__logo-spark--left" aria-hidden />
-          <span className="hero__logo-spark hero__logo-spark--right" aria-hidden />
+          <Logo className="hero__logo" variant="hero" />
         </motion.div>
 
         <motion.p className="hero__tagline" variants={heroItem}>
