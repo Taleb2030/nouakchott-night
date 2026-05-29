@@ -75,9 +75,13 @@ Every `git push` can auto-update the live site.
 
 URL: [https://taleb2030.github.io/nouakchott-night/](https://taleb2030.github.io/nouakchott-night/)
 
-1. Repo **Settings** → **Pages** → **Build and deployment** → Source: **GitHub Actions**
-2. Push to `main` — workflow `.github/workflows/deploy.yml` builds and deploys automatically
-3. Wait 2–3 minutes, then open the link above
+1. Repo **Settings** → **Pages**
+2. **Build and deployment** → Source: **Deploy from a branch**
+3. Branch: **gh-pages** → folder **/ (root)** → Save
+4. Push to `main` — GitHub Actions builds the site and updates `gh-pages`
+5. Wait 2–3 minutes, then open the link (use Ctrl+F5)
+
+**Important:** Do NOT use "main" branch as the Pages source — that shows a blank page.
 
 ---
 
