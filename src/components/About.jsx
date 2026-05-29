@@ -10,7 +10,9 @@ import {
   ease,
 } from '../animations/motion'
 
-const PHOTO = '/assets/restaurant.jpg'
+import { assetUrl } from '../utils/assetUrl'
+
+const PHOTO = assetUrl('assets/restaurant.jpg')
 
 export default function About() {
   const { t } = useTranslation()

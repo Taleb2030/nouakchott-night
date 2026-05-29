@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react'
 
+import { assetUrl } from '../utils/assetUrl'
+
 export const LOGO_CANDIDATES = [
-  '/assets/logo.png',
-  '/assets/logo.jpg',
-  '/assets/logo.jpeg',
-  '/assets/logo.webp',
-  '/assets/logo.svg',
+  assetUrl('assets/logo.png'),
+  assetUrl('assets/logo.jpg'),
+  assetUrl('assets/logo.jpeg'),
+  assetUrl('assets/logo.webp'),
+  assetUrl('assets/logo.svg'),
 ]
 
 function probeImage(src) {

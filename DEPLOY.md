@@ -71,6 +71,16 @@ Every `git push` can auto-update the live site.
 
 ---
 
+## GitHub Pages (your link)
+
+URL: [https://taleb2030.github.io/nouakchott-night/](https://taleb2030.github.io/nouakchott-night/)
+
+1. Repo **Settings** → **Pages** → **Build and deployment** → Source: **GitHub Actions**
+2. Push to `main` — workflow `.github/workflows/deploy.yml` builds and deploys automatically
+3. Wait 2–3 minutes, then open the link above
+
+---
+
 ## Option C — Cloudflare Pages (free)
 
 1. [https://dash.cloudflare.com](https://dash.cloudflare.com) → Pages → Create  

@@ -1,11 +1,11 @@
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion'
-import SoundToggle from './SoundToggle'
 import Logo from './Logo'
 import { ease } from '../animations/motion'
+import { assetUrl } from '../utils/assetUrl'
 
-const HERO_VIDEO = '/assets/videos/video1.mp4'
+const HERO_VIDEO = assetUrl('assets/videos/video1.mp4')
 
 const heroStagger = {
   hidden: {},
@@ -39,20 +39,6 @@ export default function Hero() {
   const { t } = useTranslation()
   const videoRef = useRef(null)
   const [useVideo, setUseVideo] = useState(true)
-  const [muted, setMuted] = useState(true)
-
-  useEffect(() => {
-    const video = videoRef.current
-    if (!video) return
-    video.muted = muted
-    if (!muted) {
-      video.play().catch(() => setMuted(true))
-    }
-  }, [muted])
-
-  const toggleSound = () => {
-    setMuted((m) => !m)
-  }
 
   return (
     <section id="home" className="hero">
@@ -78,13 +64,6 @@ export default function Hero() {
         <div className={`hero__fallback ${useVideo ? '' : 'hero__fallback--visible'}`} aria-hidden />
         <div className="hero__overlay" />
         <div className="hero__grain" aria-hidden />
-        {useVideo && (
-          <SoundToggle
-            muted={muted}
-            onToggle={toggleSound}
-            className="hero__sound sound-toggle--floating"
-          />
-        )}
       </motion.div>
 
       <motion.div
