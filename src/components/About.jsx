@@ -1,5 +1,6 @@
+import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import SectionHeader from './SectionHeader'
 import {
   imageReveal,
@@ -16,6 +17,7 @@ const PHOTO = assetUrl('assets/restaurant.jpg')
 
 export default function About() {
   const { t } = useTranslation()
+  const [expanded, setExpanded] = useState(false)
 
   const stats = [
     { key: 'seats', icon: '◆' },
@@ -85,6 +87,32 @@ export default function About() {
             <motion.p className="about__p" variants={fadeUpSoft} transition={transition}>
               {t('about.p2')}
             </motion.p>
+
+            <AnimatePresence>
+              {expanded && (
+                <motion.p
+                  className="about__p"
+                  variants={fadeUpSoft}
+                  transition={transition}
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: 'auto' }}
+                  exit={{ opacity: 0, height: 0 }}
+                >
+                  {t('about.p3')}
+                </motion.p>
+              )}
+            </AnimatePresence>
+
+            <motion.button
+              type="button"
+              className="about__read-link"
+              onClick={() => setExpanded(!expanded)}
+              variants={fadeUpSoft}
+              transition={transition}
+            >
+              {expanded ? t('about.showLess') : t('about.readAll')}
+              <span className="about__read-arrow">{expanded ? '↑' : '↓'}</span>
+            </motion.button>
 
             <motion.ul className="about__stats" variants={staggerContainer}>
               {stats.map(({ key, icon }, i) => (

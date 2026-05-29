@@ -20,6 +20,9 @@
     "title": "A destination for every generation",
     "p1": "Nouakchott Night welcomes travelers, locals, and families under one roof. Our spacious dining rooms, private corners, and lively terrace create the perfect setting for celebrations and quiet dinners alike.",
     "p2": "From traditional Mauritanian flavors to international cuisine, every plate is prepared with care. Our team treats every guest like family.",
+    "p3": "Since our opening, we've been honored to host thousands of guests from around the world. Each evening brings new stories, new friendships, and new memories created under Nouakchott's beautiful night sky. Our commitment to excellence remains unwavering, and we continue to evolve our offerings while staying true to the warmth and authenticity that define us.",
+    "readAll": "Read our full story",
+    "showLess": "Show less",
     "stats": {
       "seats": "200+ Seats",
       "families": "Family Friendly",
@@ -80,6 +83,7 @@
   },
   "footer": {
     "rights": "All rights reserved.",
-    "tagline": "Nouakchott Night — Hospitality under the stars."
+    "tagline": "Nouakchott Night — Hospitality under the stars.",
+    "followUs": "Follow Us"
   }
 }

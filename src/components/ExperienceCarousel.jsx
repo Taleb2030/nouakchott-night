@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { assetUrl } from '../utils/assetUrl'
 import { useRtl } from '../hooks/useRtl'
 
-const DISPLAY_MS = 10000
+const DISPLAY_MS = 3000
 const SLIDE_DURATION = 1.2
 
 const ITEMS = [

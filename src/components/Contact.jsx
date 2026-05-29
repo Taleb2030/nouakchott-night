@@ -93,11 +93,11 @@ export default function Contact() {
                 ))}
                 <motion.div className="contact__row" variants={fadeUpSoft} transition={transition}>
                   <label>
-                    <span>{t('contact.form.guests')}</span>
-                    <input type="number" name="guests" min="1" max="50" defaultValue="2" />
+                    <span>{t('contact.form.guests')} <span className="contact__input-hint">(1–50)</span></span>
+                    <input type="number" name="guests" min="1" max="50" defaultValue="2" required />
                   </label>
                   <label>
-                    <span>{t('contact.form.date')}</span>
+                    <span>{t('contact.form.date')} <span className="contact__input-hint">📅</span></span>
                     <input type="date" name="date" required />
                   </label>
                 </motion.div>

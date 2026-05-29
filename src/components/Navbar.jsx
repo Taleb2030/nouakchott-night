@@ -62,25 +62,50 @@ export default function Navbar() {
 
       <AnimatePresence>
         {menuOpen && (
-          <motion.div
-            className="navbar__mobile"
-            initial={{ opacity: 0, y: -12 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -12 }}
-            transition={{ duration: 0.25 }}
-          >
-            {links.map((link) => (
-              <a key={link.href} href={link.href} onClick={closeMenu}>
-                {link.label}
+          <>
+            <motion.div
+              className="navbar__mobile-overlay"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.25 }}
+              onClick={closeMenu}
+            />
+            <motion.div
+              className="navbar__mobile"
+              initial={{ x: '-100%' }}
+              animate={{ x: 0 }}
+              exit={{ x: '-100%' }}
+              transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
+            >
+              <div className="navbar__mobile-header">
+                <a href="#home" className="navbar__mobile-brand" onClick={closeMenu}>
+                  <Logo className="navbar__mobile-logo" />
+                  <span className="navbar__mobile-name">Nouakchott Night</span>
+                </a>
+                <button
+                  type="button"
+                  className="navbar__mobile-close"
+                  onClick={closeMenu}
+                  aria-label="Close menu"
+                >
+                  ✕
+                </button>
+              </div>
+
+              {links.map((link) => (
+                <a key={link.href} href={link.href} onClick={closeMenu}>
+                  {link.label}
+                </a>
+              ))}
+              <div className="navbar__mobile-lang">
+                <LanguageSwitcher />
+              </div>
+              <a href="#contact" className="btn btn--gold" onClick={closeMenu}>
+                {t('nav.reserve')}
               </a>
-            ))}
-            <div className="navbar__mobile-lang">
-              <LanguageSwitcher />
-            </div>
-            <a href="#contact" className="btn btn--gold" onClick={closeMenu}>
-              {t('nav.reserve')}
-            </a>
-          </motion.div>
+            </motion.div>
+          </>
         )}
       </AnimatePresence>
     </header>

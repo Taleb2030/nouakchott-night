@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion'
 import SectionHeader from './SectionHeader'
@@ -19,6 +19,18 @@ function VideoCard({ src, index, label }) {
   const videoRef = useRef(null)
   const [hasVideo, setHasVideo] = useState(true)
   const [withSound, setWithSound] = useState(false)
+
+  const autoPlayMuted = () => {
+    const video = videoRef.current
+    if (!video || !hasVideo) return
+    video.muted = true
+    video.play().catch(() => {})
+  }
+
+  useEffect(() => {
+    const timer = setTimeout(autoPlayMuted, 300)
+    return () => clearTimeout(timer)
+  }, [hasVideo])
 
   const handleClick = () => {
     const video = videoRef.current

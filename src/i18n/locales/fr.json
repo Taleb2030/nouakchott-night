@@ -20,6 +20,9 @@
     "title": "Une destination pour toutes les générations",
     "p1": "Nouakchott Night accueille voyageurs, habitants et familles sous un même toit. Nos vastes salles, coins privés et terrasse animée offrent le cadre idéal pour les fêtes comme pour les dîners intimes.",
     "p2": "Des saveurs mauritaniennes traditionnelles à la cuisine internationale, chaque plat est préparé avec soin. Notre équipe traite chaque invité comme un membre de la famille.",
+    "p3": "Depuis nos débuts, nous avons eu l'honneur d'accueillir des milliers d'hôtes du monde entier. Chaque soirée apporte de nouvelles histoires, de nouvelles amitiés et de nouveaux souvenirs créés sous le magnifique ciel nocturne de Nouakchott. Notre engagement envers l'excellence reste inébranlable, et nous continuons à évoluer tout en restant fidèles à la chaleur et l'authenticité qui nous définissent.",
+    "readAll": "Lire notre histoire complète",
+    "showLess": "Afficher moins",
     "stats": {
       "seats": "200+ places",
       "families": "Familles bienvenues",
@@ -80,6 +83,7 @@
   },
   "footer": {
     "rights": "Tous droits réservés.",
-    "tagline": "Nouakchott Night — L'hospitalité sous les étoiles."
+    "tagline": "Nouakchott Night — L'hospitalité sous les étoiles.",
+    "followUs": "Suivez-nous"
   }
 }
