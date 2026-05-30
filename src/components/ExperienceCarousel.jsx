@@ -125,7 +125,7 @@ export default function ExperienceCarousel() {
           ›
         </button>
 
-        {paused && <span className="experience__carousel-paused">{t('experience.paused')}</span>}
+        {paused && <span className="experience__carousel-paused">.</span>}
       </div>
 
       <div className="experience__carousel-content">
