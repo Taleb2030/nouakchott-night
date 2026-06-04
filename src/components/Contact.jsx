@@ -44,7 +44,7 @@ export default function Contact() {
             variants={staggerContainer}
           >
             {[
-              { strong: t('contact.phone'), content: <a href="tel:+22200000000">+222 00 00 00 00</a> },
+              { strong: t('contact.phone'), content: <a href="tel:+22242428442">+222 42 42 84 42</a> },
               { strong: t('contact.hours'), content: <span>{t('contact.hoursValue')}</span> },
               { strong: t('contact.address'), content: <span>{t('contact.address')}</span> },
             ].map((item, i) => (
@@ -93,7 +93,7 @@ export default function Contact() {
                 ))}
                 <motion.div className="contact__row" variants={fadeUpSoft} transition={transition}>
                   <label>
-                    <span>{t('contact.form.guests')} <span className="contact__input-hint">(1–50)</span></span>
+                    <span>{t('contact.form.guests')} <span className="contact__input-hint">{isRtl ? '(١–٥٠)' : '(1–50)'}</span></span>
                     <input type="number" name="guests" min="1" max="50" defaultValue="2" required />
                   </label>
                   <label>
